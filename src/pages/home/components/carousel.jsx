@@ -7,14 +7,14 @@ export default function CustomCarousel(){
     return(
         <>
         <Carousel data-bs-theme="dark" wrap = "true">
-      <Carousel.Item className="carouseltest">
+      <Carousel.Item>
         <img
           className="d-block w-100"
           src="https://www.pluggedin.com/wp-content/uploads/2023/02/hogwarts-legacy-1024x587.jpg"
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h5>First slide label</h5>
+        <Carousel.Caption className="">
+          <h5 >First slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -43,8 +43,6 @@ export default function CustomCarousel(){
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-    <h1>nckjdn</h1>
-
-        </>
+    </>
     )
 }
