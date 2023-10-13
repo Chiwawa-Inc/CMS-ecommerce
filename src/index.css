@@ -26,3 +26,8 @@ code {
 .carousel-caption{
   color: white !important;
 }
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
