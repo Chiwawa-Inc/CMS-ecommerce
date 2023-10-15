@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom"
 
 import App from "../App";
 import Contact from "../pages/contact";
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home/>
+                element: <Home />
             },
 
             {
@@ -31,6 +31,6 @@ const router = createBrowserRouter([
             },
         ],
     },
-]);
+])
 
-export default router;
+export default router

@@ -12,7 +12,7 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <NavItem>
-              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/" >Home</Nav.Link>
             </NavItem>
             <NavItem>
               <Nav.Link eventKey="products">Products</Nav.Link>
