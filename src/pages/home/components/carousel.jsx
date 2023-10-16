@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export default function CustomCarousel(){
     return(
-        <>
+        <div className="carousel-container">
         <Carousel data-bs-theme="dark" wrap = "true">
       <Carousel.Item>
         <img
@@ -43,6 +43,6 @@ export default function CustomCarousel(){
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-    </>
+    </div>
     )
 }
