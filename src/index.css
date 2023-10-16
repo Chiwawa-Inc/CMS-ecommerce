@@ -29,7 +29,7 @@ a{
 }
 
 .carousel-container{
-  height: 80vh;
+  max-height: 80vh;
   overflow: hidden;
 }
 
@@ -59,7 +59,8 @@ a{
   border-radius: 50%;
 }
 
-.carousel-item img{
+.carousel-item {
   max-height: 80vh;
+  overflow: hidden;
 }
 

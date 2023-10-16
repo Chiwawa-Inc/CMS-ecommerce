@@ -7,7 +7,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 export default function Contact(){
     return(
         <>
-        <div className="" style = {{"margin-top": "10vh", "background-color": "black", "color":"white"}}>
+        <div className="" style = {{marginTop: "10vh", backgroundColor: "black", "color":"white"}}>
             <Container>
             {/* bootstrap*/}<Row  className="text-center" > 
                 <Col>
