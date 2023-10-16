@@ -6,9 +6,9 @@ import { Outlet } from "react-router-dom"
 import Navbar from "./components/Navbar"
 
 const api = new WooCommerceRestApi({
-    url: "https://autotechpl.com",
-    consumerKey: "ck_79059382deb2cd289bab5cdf3005cce1e3f96e73",
-    consumerSecret: "cs_29463a2ba26b158b68ab85f9e09610604a93e181",
+    url: "https://server.autotechpl.com",
+    consumerKey: "ck_1872a1428a4b359d525af3461e0ed652fdffcdd4",
+    consumerSecret: "cs_3668d8c0f2a2323c2c941c7722450394dae31549",
     version: "wc/v3",
 })
 

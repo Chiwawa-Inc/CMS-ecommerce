@@ -27,3 +27,39 @@ a{
 .nav-item{
   margin: auto 0 auto 2em;
 }
+
+.carousel-container{
+  height: 80vh;
+  overflow: hidden;
+}
+
+/* .carousel-caption{
+  top: 50vh;
+}
+
+.carousel-indicators{
+  top: 70vh;
+} */
+/* .carousel .slide{
+  height: 80vh;
+  overflow: hidden;
+  max-height: 80vh;
+} */
+
+/* .carousel-item{
+  height: 100%;
+  overflow: hidden;
+} */
+.carousel-caption{
+  color: white !important;
+}
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.carousel-item img{
+  max-height: 80vh;
+}
+
