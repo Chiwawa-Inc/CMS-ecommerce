@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api"
-import moment from "moment"
 import { Outlet } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
