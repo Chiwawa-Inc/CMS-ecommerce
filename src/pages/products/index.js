@@ -3,6 +3,7 @@ import CategoriesCard from "./components/CategoriesCard"
 import { Col, Row, Stack } from "react-bootstrap"
 import { Container } from "react-bootstrap"
 import FilterSection from "./components/FilterSection"
+import ProductCard from "./components/ProductCard"
 
 export default function Products() {
     return (
@@ -18,10 +19,17 @@ export default function Products() {
                 <CategoriesCard />
             </Stack>
             <Row md={2}>
-                <Col md={3} xs={1}>
+                <Col md={3}>
                     <FilterSection />
                 </Col>
-                <Col>asdf</Col>
+                <Col md={9} style={{display:"flex", flexDirection: "row", flexWrap: "wrap", gap: "3em"}}>
+                
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                </Col>
             </Row>
         </Container>
     )
