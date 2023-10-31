@@ -11,7 +11,7 @@ export default function FilterAccordion( {subCategories, brands} ) {
                 <Accordion.Body className='p-0'>
                     <ListGroup variant="flush">
                         {subCategories.map(subCategory =>(
-                            <ListGroupItem>{subCategory}</ListGroupItem>
+                            <ListGroupItem>{subCategory.title}</ListGroupItem>
                         ))}
                     </ListGroup>
                 </Accordion.Body>
@@ -21,7 +21,7 @@ export default function FilterAccordion( {subCategories, brands} ) {
                 <Accordion.Body className='p-0'>
                 <ListGroup variant="flush">
                         {brands.map(brand =>(
-                            <ListGroupItem>{brand}</ListGroupItem>
+                            <ListGroupItem>{brand.title}</ListGroupItem>
                         ))}
                     </ListGroup>
                 </Accordion.Body>

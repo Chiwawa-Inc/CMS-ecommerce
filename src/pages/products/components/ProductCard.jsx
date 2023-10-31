@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function ProductCard() {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ minWidth: '8rem',maxWidth: '15rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
