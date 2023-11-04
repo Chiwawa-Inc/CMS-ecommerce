@@ -25,11 +25,12 @@ function App() {
         })
             .then((response) => {
                 if (response.status === 200) {
-                    console.log(response.data, "----------------------")
                     setOrders(response.data)
                 }
             })
-            .catch((error) => {})
+            .catch((error) => {
+                console.log(error)
+            })
     }
 
     return (
