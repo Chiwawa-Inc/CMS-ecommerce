@@ -1,7 +1,14 @@
 import React from "react";
 import { useState, useEffect} from "react";
+import Form from "react-bootstrap/Form"
+import Button from "react-bootstrap/Button"
+import InputGroup from 'react-bootstrap/InputGroup';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Navbar from 'react-bootstrap/Navbar'
 
-export default function Form(){
+
+export default function Inquiry(){
     const initialValues = {username: "", email: "", phonenumber: ""};
     const [formValues, setFormValues] = useState(initialValues)
     const [formErrors, setFormErrors] = useState({})
@@ -44,28 +51,33 @@ export default function Form(){
 
 }
     return(
+        
         <div>
             <h1>Book Appointment</h1>
-            <form onSubmit={handleSubmit}>
+            <Form inline onSubmit={handleSubmit}>
                 <div className="field">
                 <label>Username</label>
-                <input type="text" name = "username" placeholder= "Username" value = {formValues.username} onChange = {handleChange} ></input>
+                <Form.Control placeholder = "username" aria-label = "username" aria-describedby = "basic-addon1"  value = {formValues.username} onChange = {handleChange}></Form.Control>
+                {/* <input type="text" name = "username" placeholder= "Username" value = {formValues.username} onChange = {handleChange} ></input> */}
                 </div>
                 <p>{formErrors.username}</p>
                 <div className="field">
                     <label>Email Address</label>
-                    <input type = "email" name = "email" placeholder = "Email" value = {formValues.email} onChange = {handleChange} />
+                    <Form.Control placeholder = "email" aria-label = "emiail" aria-describedby = "basic-addon1"  value = {formValues.email} onChange = {handleChange}></Form.Control>
+                    {/* <input type = "email" name = "email" placeholder = "Email" value = {formValues.email} onChange = {handleChange} /> */}
                 </div>
                 <p>{formErrors.email}</p>
 
                 <div className="field">
                     <label>Phone Number</label>
-                    <input type = "string" name = "phonenumber" placeholder = "Number" value = {formValues.phonenumber} onChange = {handleChange} />
+                    <Form.Control placeholder = "phonenumber" aria-label = "phonenumber" aria-describedby = "basic-addon1"  value = {formValues.phonenumber} onChange = {handleChange}></Form.Control>
+                    {/* <input type = "string" name = "phonenumber" placeholder = "Number" value = {formValues.phonenumber} onChange = {handleChange} /> */}
                 </div>
                 <p>{formErrors.phonenumber}</p>
 
-                <button>Submit</button>
-            </form>
+                <Button type = "submit">Submit</Button>
+            </Form>
         </div>
+     
     )
 }
