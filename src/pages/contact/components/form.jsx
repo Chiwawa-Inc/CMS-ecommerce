@@ -52,25 +52,25 @@ export default function Inquiry(){
 }
     return(
         
-        <div>
+        <div style ={{margin: "7em"}}>
             <h1>Book Appointment</h1>
             <Form inline onSubmit={handleSubmit}>
                 <div className="field">
                 <label>Username</label>
-                <Form.Control placeholder = "username" aria-label = "username" aria-describedby = "basic-addon1"  value = {formValues.username} onChange = {handleChange}></Form.Control>
+                <Form.Control style = {{width: "40%"}} placeholder = "username" aria-label = "username" aria-describedby = "basic-addon1"  value = {formValues.username} onChange = {handleChange}></Form.Control>
                 {/* <input type="text" name = "username" placeholder= "Username" value = {formValues.username} onChange = {handleChange} ></input> */}
                 </div>
                 <p>{formErrors.username}</p>
                 <div className="field">
                     <label>Email Address</label>
-                    <Form.Control placeholder = "email" aria-label = "emiail" aria-describedby = "basic-addon1"  value = {formValues.email} onChange = {handleChange}></Form.Control>
+                    <Form.Control style = {{width: "40%"}} placeholder = "email" aria-label = "emiail" aria-describedby = "basic-addon1"  value = {formValues.email} onChange = {handleChange}></Form.Control>
                     {/* <input type = "email" name = "email" placeholder = "Email" value = {formValues.email} onChange = {handleChange} /> */}
                 </div>
                 <p>{formErrors.email}</p>
 
                 <div className="field">
                     <label>Phone Number</label>
-                    <Form.Control placeholder = "phonenumber" aria-label = "phonenumber" aria-describedby = "basic-addon1"  value = {formValues.phonenumber} onChange = {handleChange}></Form.Control>
+                    <Form.Control style = {{width: "40%"}} placeholder = "phonenumber" aria-label = "phonenumber" aria-describedby = "basic-addon1"  value = {formValues.phonenumber} onChange = {handleChange}></Form.Control>
                     {/* <input type = "string" name = "phonenumber" placeholder = "Number" value = {formValues.phonenumber} onChange = {handleChange} /> */}
                 </div>
                 <p>{formErrors.phonenumber}</p>
