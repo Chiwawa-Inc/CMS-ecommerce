@@ -2,11 +2,6 @@ import React from "react";
 import { useState, useEffect} from "react";
 import Form from "react-bootstrap/Form"
 import Button from "react-bootstrap/Button"
-import InputGroup from 'react-bootstrap/InputGroup';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Navbar from 'react-bootstrap/Navbar'
-
 
 export default function Inquiry(){
     const initialValues = {username: "", email: "", phonenumber: ""};
@@ -15,10 +10,10 @@ export default function Inquiry(){
     const [isSubmit, setIsSubmit] = useState(false)
 
     const handleChange = (e) => {
-        console.log(e.target)
+        console.log(e)
         const{name, value} = e.target
         setFormValues({ ...formValues, [name]: value})
-        console.log(formValues)
+        // console.log(formValues)
         setIsSubmit(true)
     }
 
@@ -51,33 +46,55 @@ export default function Inquiry(){
 
 }
     return(
-        
-        <div style ={{margin: "7em"}}>
-            <h1>Book Appointment</h1>
-            <Form inline onSubmit={handleSubmit}>
-                <div className="field">
-                <label>Username</label>
-                <Form.Control style = {{width: "40%"}} placeholder = "username" aria-label = "username" aria-describedby = "basic-addon1"  value = {formValues.username} onChange = {handleChange}></Form.Control>
-                {/* <input type="text" name = "username" placeholder= "Username" value = {formValues.username} onChange = {handleChange} ></input> */}
-                </div>
-                <p>{formErrors.username}</p>
-                <div className="field">
-                    <label>Email Address</label>
-                    <Form.Control style = {{width: "40%"}} placeholder = "email" aria-label = "emiail" aria-describedby = "basic-addon1"  value = {formValues.email} onChange = {handleChange}></Form.Control>
-                    {/* <input type = "email" name = "email" placeholder = "Email" value = {formValues.email} onChange = {handleChange} /> */}
-                </div>
-                <p>{formErrors.email}</p>
+        <>
+             <div className="Header" style = {{paddingTop: "60px", paddingLeft: "70px"}}>
+                <h1>Book Appointment</h1>
+            </div>
 
-                <div className="field">
-                    <label>Phone Number</label>
-                    <Form.Control style = {{width: "40%"}} placeholder = "phonenumber" aria-label = "phonenumber" aria-describedby = "basic-addon1"  value = {formValues.phonenumber} onChange = {handleChange}></Form.Control>
-                    {/* <input type = "string" name = "phonenumber" placeholder = "Number" value = {formValues.phonenumber} onChange = {handleChange} /> */}
-                </div>
+            <div className="form" style = {{paddingLeft:"70px", paddingTop: "20px"}} >
+            <Form inline onSubmit={handleSubmit}>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Username</Form.Label>
+                <Form.Control style = {{width: "40%"}} name = "username" 
+                    placeholder = "Username" 
+                    aria-label = "username" 
+                    aria-describedby = "basic-addon1"  
+                    value = {formValues.username} 
+                    onChange = {handleChange}>
+                </Form.Control>
+                <p>{formErrors.username}</p>
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Email Address</Form.Label>
+                    <Form.Control style = {{width: "40%"}} 
+                        name = "email"
+                        placeholder = "Email" 
+                        aria-label = "email" 
+                        aria-describedby = "basic-addon1" 
+                        value = {formValues.email} 
+                        onChange = {handleChange}>
+                     </Form.Control>
+                <p>{formErrors.email}</p>
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Phone Number</Form.Label>
+                    <Form.Control style = {{width: "40%"}} 
+                        name = "phonenumber"
+                        placeholder = "Phonenumber" 
+                        aria-label = "phonenumber" 
+                        aria-describedby = "basic-addon1"  
+                        value = {formValues.phonenumber} 
+                        onChange = {handleChange}>
+                    </Form.Control>
                 <p>{formErrors.phonenumber}</p>
+                </Form.Group>
 
                 <Button type = "submit">Submit</Button>
             </Form>
-        </div>
+            </div>
+        </>
      
     )
 }
