@@ -17,11 +17,9 @@ jobs:
         install -m 600 -D /dev/null ~/.ssh/id_rsa
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
-    - name: connect and pull
-      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }}/CMS-ecommerce && pwd && git checkout ${{ secrets.MAIN_BRANCH }} && git pull"
-    - name: build
-      run: npm run build
+    - name: connect and pull and build
+      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }}/CMS-ecommerce && pwd && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && npm run build"
     - name: deploy
-      run: cp -f {{ secrets.WORK_DIR }}/CMS-ecommerce/build/. {{ secrets.WORK_DIR }}
+      run: cp -f ${{ secrets.WORK_DIR }}/CMS-ecommerce/build/. ${{ secrets.WORK_DIR }}
     - name: cleanup
       run: rm -rf ~/.ssh
