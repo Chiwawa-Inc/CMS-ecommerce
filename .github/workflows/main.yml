@@ -8,10 +8,25 @@ jobs:
   run_pull:
     name: run pull
     runs-on: ubuntu-latest
-    
+    strategy:
+      matrix:
+        node-version: [18.x]
     steps:
-    - name: build
-      run: npm run build
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@master
+      with:
+        node-version: ${{ matrix.node-version }}
+    
+    # - name: Copy .env.prod.example to .env
+    #   run: cp .env.prod.example .env
+
+    - name: 🔨 Build Project 
+      run: |
+        npm install
+        npm run build
     - name: install ssh keys
       # check this thread to understand why its needed:
       # https://stackoverflow.com/a/70447517
