@@ -24,6 +24,8 @@ jobs:
     #   run: cp .env.prod.example .env
 
     - name: 🔨 Build Project 
+      env:
+        CI: ""
       run: |
         npm install
         npm run build
