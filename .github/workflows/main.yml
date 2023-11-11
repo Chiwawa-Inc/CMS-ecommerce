@@ -18,6 +18,10 @@ jobs:
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
     - name: connect and pull
-      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }}/CMS-ecommerce && pwd && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && exit"
+      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }}/CMS-ecommerce && pwd && git checkout ${{ secrets.MAIN_BRANCH }} && git pull"
+    - name: build
+      run: npm run build
+    - name: deploy
+      run: cp -f {{ secrets.WORK_DIR }}/CMS-ecommerce/build/. {{ secrets.WORK_DIR }}
     - name: cleanup
       run: rm -rf ~/.ssh
