@@ -42,6 +42,6 @@ jobs:
       run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }}/CMS-ecommerce && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && exit"
     - name: deploy with rsync
       run: |
-        rsync -avz .build/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:{{ secrets.WORK_DIR }}
+        rsync -avz .build/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.WORK_DIR }}
     - name: cleanup
       run: rm -rf ~/.ssh
