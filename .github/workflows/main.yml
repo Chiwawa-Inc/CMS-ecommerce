@@ -40,7 +40,8 @@ jobs:
         ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
     - name: connect and pull and build
       run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }}/CMS-ecommerce && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && exit"
-    - name: deploy
-      run: cp -f ${{ secrets.WORK_DIR }}/CMS-ecommerce/build/. ${{ secrets.WORK_DIR }}
+    - name: deploy with rsync
+      run: |
+        rsync -avz .build/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:{{ secrets.WORK_DIR }}
     - name: cleanup
       run: rm -rf ~/.ssh
