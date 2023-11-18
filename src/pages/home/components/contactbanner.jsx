@@ -6,25 +6,25 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
-// import logo from '../assets/logo.png'
+import logo from '../../../assets/logo.png'
 
 
 export default function Contact(){
     return(
         <>
-        <div className="" style = {{marginTop: "10vh", backgroundColor: "#252b42", lineHeight: "4em", paddingTop: "60px", color: "white"}}>
+        <div className="" style = {{ backgroundColor: "#252b42", lineHeight: "4em", color: "white"}}>
             <Container style={{}}>
             {/* bootstrap*/}
-            <Row  className="text-center" style = {{marginLeft: "10px"}}> 
+            <Row style = {{paddingTop: "30px", paddingBottom: "30px"}}> 
                 <Col style = {{textAlign: "left"}}>
-                    <div className="" style = {{fontSize: "30px", fontFamily: "Inter"}}>
-                        {/* <img src = {logo}></img> */}
-                        <h1>Automatica Technologies</h1>
+                    <div className="" style = {{fontSize: "25px", fontFamily: "Inter"}}>
+                        <img src = {logo} alt = "logo"  width="40" height="40" style ={{marginRight: "1rem"}}></img>
+                        Automatica Technologies
                     </div>
                    
                 </Col>
                 <Col style = {{textAlign: "left"}}>
-                    <div style= {{fontSize: "24px"}}>Contact Us</div>
+                    <div style= {{fontSize: "24px"}}>{' '}Contact Us</div>
                     <div className="" style = {{fontSize: "20px"}}> 
                         <FmdGoodIcon/> Dhapasi, Kathmandu
                     </div>
@@ -35,7 +35,7 @@ export default function Contact(){
                         <EmailIcon/> sales.automatica@gmail.com
                     </div>
                 </Col>
-                <Col >
+                <Col style = {{textAlign: "center"}}>
                     <div style= {{fontSize: "24px"}}>Follow Us</div>
                     <div className="text-primary" style ={{color: "white"}}><InstagramIcon/></div>
                     <div className="text-primary"><LinkedInIcon/></div>
@@ -44,9 +44,11 @@ export default function Contact(){
             </Row>
             </Container>
             <div style ={{ backgroundColor:"#182130"}}>
+            <Container>
             <Row >
-                <div style ={{textAlign: "center", fontSize: "18px", paddingTop: "10px", }}><p>© 2023 Automatica Technologies</p></div>
+                <div style ={{textAlign: "center", fontSize: "18px", paddingTop: "5px", }}>© 2023 Automatica Technologies</div>
             </Row>
+            </Container>
             </div>
         </div>
         </>
