@@ -39,9 +39,11 @@ function NavBar() {
     },
   ]
   return (
+    <>
+    {/* <div style = {{backgroundColor: "#182130"}}> */}
+    
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        
         <Navbar.Brand href="#home">
         <img
               alt=""
@@ -68,6 +70,7 @@ function NavBar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </>
   );
 }
 

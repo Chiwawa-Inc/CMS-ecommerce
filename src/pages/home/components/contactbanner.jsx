@@ -19,7 +19,8 @@ export default function Contact(){
                 <Col style = {{textAlign: "left"}}>
                     <div className="" style = {{fontSize: "25px", fontFamily: "Inter"}}>
                         <img src = {logo} alt = "logo"  width="40" height="40" style ={{marginRight: "1rem"}}></img>
-                        Automatica Technologies
+                        Automatica Technologies<br></br>
+                        Where engineering is Passion!!
                     </div>
                    
                 </Col>
@@ -35,7 +36,7 @@ export default function Contact(){
                         <EmailIcon/> sales.automatica@gmail.com
                     </div>
                 </Col>
-                <Col style = {{textAlign: "center"}}>
+                <Col md = {3} style = {{textAlign: "left"}}>
                     <div style= {{fontSize: "24px"}}>Follow Us</div>
                     <div className="text-primary" style ={{color: "white"}}><InstagramIcon/></div>
                     <div className="text-primary"><LinkedInIcon/></div>
