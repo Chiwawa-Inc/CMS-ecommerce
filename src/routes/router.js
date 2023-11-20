@@ -6,6 +6,7 @@ import Products from "../pages/products";
 import Services from "../pages/services";
 import Home from "../pages/home"
 import Blogs from "../pages/Blogs"
+import ServiceDetailPage  from "../pages/services/serviceDetailPage";
 
 // import
 const router = createBrowserRouter([
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
             {
                 path: "/contact",
                 element: <Contact />,
+            },
+
+            {
+                path: "/servicedetailpage",
+                element: <ServiceDetailPage/>,
             },
         ],
     },
