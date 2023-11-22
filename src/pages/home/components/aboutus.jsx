@@ -4,7 +4,7 @@ import { Col, Row, Container} from "react-bootstrap";
 
 export default function About(){
     return(
-        <div className="" style = {{margin: "5em 0"}}>
+        <Container className="" style = {{margin: "5em auto"}}>
             <h1 className="text-center">About Us</h1>
             <Row style = {{ margin: "4em"}}>
             <Col>
@@ -16,6 +16,6 @@ export default function About(){
                 <img src = "https://miro.medium.com/v2/resize:fit:1400/0*TVvcb08UBLeL919-.jpeg " alt = "Col" style = {{width: "600px", height: "300px"}}></img>
             </Col>
             </Row>
-        </div>
+        </Container>
     )
 }
