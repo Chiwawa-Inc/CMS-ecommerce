@@ -12,55 +12,58 @@ export default function ServiceDetailPage(){
         {
             title: "Electrical Services",
             image: "",
-            des: "bjsdjjj"
+            des: " From system design and installation to testing, maintenance, and energy audits, we cover the entire electrical spectrum. Our electrical solutions ensure uninterrupted power supply, enhanced safety, and optimal energy utilization."
+            
         },
         {
-            title: "Electrical Services",
+            title: "Mechanical Services",
             image: "",
-            des: "djvsjbv"
+            des: "Our mechanical expertise extends to HVAC systems, ventilation, and climate control. We design, install, and maintain efficient systems that create comfortable environments while reducing energy consumption."
+            
         },
         {
-            title: "Electrical Services",
+            title: "Plumbing Service",
             image: "",
-            des: "sdvbksdv"
+            des: " Our plumbing services include design, installation, and maintenance of plumbing systems that prioritize water conservation and safety. We ensure efficient water distribution and drainage solutions."
+            
         },
         {
-            title: "Electrical Services",
+            title: "Technology Integration",
             image: "",
-            des: " svnfs"
+            des: " We seamlessly integrate state-of-the-art electronics and information technology into your MEP systems, enabling smart automation, monitoring, and control for enhanced efficiency and convenience."
         },
         {
-            title: "Electrical Services",
+            title: "Energy Efficiency",
             image: "",
-            des: "nvd"
+            des: "Sustainability is at the core of our services. We offer energy-efficient solutions, renewable energy integration, and green building practices to reduce your carbon footprint and operating costs."
         }
 
     ]
 
     const whyChoose = [
         {
-            title: "bjhbv",
-            des: "jbcsdjb",
+            title: "Expertise",
+            des: "Our team comprises highly skilled engineers, technicians, and specialists who bring years of experience to every project, ensuring the highest level of service and innovation.",
             color: "primary"
         },
         {
-            title: "bjhbv",
-            des: "jbcsdjb",
+            title: "Customization",
+            des: " We recognize that each project is unique. Our solutions are tailor-made to meet your specific needs and objectives, delivering optimal results.",
             color: "secondary"
         },
         {
-            title: "bjhbv",
-            des: "jbcsdjb",
+            title: "Sustainability Focus",
+            des: " We share your commitment to sustainability. Our services are designed to align with environmental best practices, promoting a greener future.",
             color: "warning"
         },
         {
-            title: "bjhbv",
-            des: "jbcsdjb",
+            title: "Efficiency and Reliability",
+            des: "We prioritize the efficiency and reliability of your MEP systems, guaranteeing uninterrupted operations and long-term cost savings.",
             color: "danger"
         },
         {
-            title: "bjhbv",
-            des: "jbcsdjb",
+            title: "Cutting-Edge Technology",
+            des: "We embrace the latest advancements in electronics and information technology to provide you with smart, future-ready solutions.",
             color: "dark"
         }
     ]

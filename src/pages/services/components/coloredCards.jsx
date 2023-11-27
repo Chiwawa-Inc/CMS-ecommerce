@@ -10,10 +10,10 @@ export default function ColoredCards(props){
           bg={details.color}
           key={details.color}
           text={details.color === 'light' ? 'dark' : 'white'}
-          style={{ width: '18rem', height: "300px", margin: "auto"}}
+          style={{ width: '18rem', height: "250px", margin: "auto", paddingTop: "40px"}}
           className="mb-2"
         >
-          <Card.Header>Header</Card.Header>
+          {/* <Card.Header>{details.title}</Card.Header> */}
           <Card.Body>
             <Card.Title> {details.title} </Card.Title>
             <Card.Text>
