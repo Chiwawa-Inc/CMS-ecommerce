@@ -6,7 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
-import logo from '../../../assets/logo.png'
+import logo from '../assets/logo.png'
 
 
 export default function Contact(){

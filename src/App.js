@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
 import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api"
-import moment from "moment"
 import { Outlet } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+import FooterBanner from "./components/FooterBanner"
 
 const api = new WooCommerceRestApi({
     url: "https://server.autotechpl.com",
@@ -36,6 +37,8 @@ function App() {
         <div className="App">
             <Navbar />
             <Outlet />
+            <Footer />
+            <FooterBanner />
         </div>
     )
 }
