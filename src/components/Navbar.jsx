@@ -48,11 +48,11 @@ function NavBar() {
         <img
               alt=""
               src={logo}
-              width="30"
-              height="30"
+              width="40"
+              height="40"
               className="d-inline-block align-top"
             />{' '}
-            Automatica Technologies</Navbar.Brand>
+            <span style={{verticalAlign:"middle"}}>Automatica Technologies</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
