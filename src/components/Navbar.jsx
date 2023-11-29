@@ -44,7 +44,7 @@ function NavBar() {
     
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
         <img
               alt=""
               src={logo}
