@@ -4,7 +4,6 @@ import { Outlet } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
-import FooterBanner from "./components/FooterBanner"
 
 const api = new WooCommerceRestApi({
     url: "https://server.autotechpl.com",
@@ -38,7 +37,6 @@ function App() {
             <Navbar />
             <Outlet />
             <Footer />
-            <FooterBanner />
         </div>
     )
 }
