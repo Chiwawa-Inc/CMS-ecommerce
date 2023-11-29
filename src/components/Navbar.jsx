@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png'
 
 function NavBar() {
 
@@ -22,17 +23,36 @@ function NavBar() {
       link: "/services",
       component: "Services"
     },
+    
     {
       id: "4",
+      link: "/blogs",
+      component: "Blogs"
+    },
+
+
+    {
+      id: "5",
       link: "/contact",
       component: <Button as="div">Get In Touch</Button>
 
     },
   ]
   return (
+    <>
+    {/* <div style = {{backgroundColor: "#182130"}}> */}
+    
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">
+        <img
+              alt=""
+              src={logo}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            Automatica Technologies</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -50,6 +70,7 @@ function NavBar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </>
   );
 }
 
