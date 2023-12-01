@@ -9,10 +9,11 @@ import EmailIcon from '@mui/icons-material/Email';
 import logo from '../assets/logo.png'
 
 
-export default function Contact(){
+export default function Footer(){
     return(
         <>
-        <div className="" style = {{ backgroundColor: "#252b42", lineHeight: "4em", color: "white"}}>
+        {/* <div className="" style = {{ backgroundColor: "#252b42", lineHeight: "4em", color: "white"}}> */}
+        <div className="glass-morph" style = {{  lineHeight: "4em", color: "white"}}>
             <Container style={{}}>
             {/* bootstrap*/}
             <Row style = {{paddingTop: "30px", paddingBottom: "30px"}}> 

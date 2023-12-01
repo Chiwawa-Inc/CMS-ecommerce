@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Inter;
+  background-image: linear-gradient(90deg, rgb(9, 36, 36) 3%, rgb(50, 94, 100, 0.7) 30%, rgb(50, 94, 100) 90%, rgba(9, 36, 36, 0.918) 100%);
+  /* background-image: linear-gradient(90deg, rgb(28, 33, 50) 0%, rgba(118,135,141,1) 71%, rgb(50, 94, 100) 95%); */
+
 }
 
 code {
@@ -65,3 +68,12 @@ a{
   overflow: hidden;
 }
 
+.glass-morph{
+  background: #252b4277;
+  border-radius: 50px 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(11.2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-width: 2px 0px 0px 0px;
+}
