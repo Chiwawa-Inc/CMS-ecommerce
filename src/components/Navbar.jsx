@@ -44,7 +44,11 @@ function NavBar() {
     
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
+<<<<<<< HEAD
         <Navbar.Brand href="#home">
+=======
+        <Navbar.Brand href="/">
+>>>>>>> main
         <img
               alt=""
               src={logo}

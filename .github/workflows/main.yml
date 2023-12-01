@@ -1,0 +1,47 @@
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  
+jobs:
+  run_pull:
+    name: run pull
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@master
+      with:
+        node-version: ${{ matrix.node-version }}
+    
+    # - name: Copy .env.prod.example to .env
+    #   run: cp .env.prod.example .env
+
+    - name: 🔨 Build Project 
+      env:
+        CI: ""
+      run: |
+        npm install
+        npm run build
+    - name: List output files
+      run: find build/ -print
+    - name: install ssh keys
+      # check this thread to understand why its needed:
+      # https://stackoverflow.com/a/70447517
+      run: |
+        install -m 600 -D /dev/null ~/.ssh/id_rsa
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
+    - name: connect and pull and build
+      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }}/CMS-ecommerce && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && exit"
+    - name: deploy with rsync
+      run: |
+        rsync -avz build/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.WORK_DIR }}
+    - name: cleanup
+      run: rm -rf ~/.ssh
