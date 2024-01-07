@@ -43,6 +43,10 @@ const router = createHashRouter([
                 path: "/servicedetailpage",
                 element: <ServiceDetailPage/>,
             },
+            {
+                path: "/servicedetailpage2",
+                element: <secondIndex/>,
+            },
         ],
     },
 ])
