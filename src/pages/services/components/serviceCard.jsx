@@ -20,7 +20,7 @@ function ServiceCard({props}) {
   )
   
   return (
-    props.subServices ? ServicesAccordion({props}) :
+    props.subServices ? <ServicesAccordion props={props}/> :
     <Link to={props.link}>
       <SimpleCard props={props}/>
     </Link>
