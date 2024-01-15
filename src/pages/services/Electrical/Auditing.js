@@ -1,13 +1,13 @@
 import React from "react";
-import Mep from "./components/title";
-import DiverseServices from "./components/diverseServices";
+import Mep from "../components/title";
+import DiverseServices from "../components/diverseServices";
 import { Container } from "react-bootstrap";
-import Card from "./components/cardgrid";
+import Card from "../components/cardgrid";
 import { Col, Row} from "react-bootstrap";
-import ColoredCards from "./components/coloredCards";
-import Redefine from "./components/redefine";
+import ColoredCards from "../components/coloredCards";
+import Redefine from "../components/redefine";
 
-export default function ServiceDetailPage(){
+export default function DetailPage(){
     const serviceType = [
         {
             title: "Electrical Services",
@@ -67,10 +67,9 @@ export default function ServiceDetailPage(){
             color: "dark"
         }
     ]
-    const head = "mep"
-    const description = "bcsdbcjn"
+    const head = "Electrical Energy Auditing Services"
+    const description = "At Automatica Technologies Pvt. Ltd. (Nepal), we are dedicated to providing comprehensive Electrical Energy Audit Services that empower businesses to optimize their energy consumption, reduce costs, and enhance sustainability. With a deep-rooted commitment to excellence in electrical, electronics, and information technology services, we are your trusted partner in navigating the complex landscape of energy efficiency."
     return(
-
        <Container style = {{textAlign: "center"}}>
         <Mep heading = {head} description = {description}/>
         <DiverseServices/>
@@ -98,3 +97,9 @@ export default function ServiceDetailPage(){
         </Container>
     )
 }
+
+// export default function DetailPage(){
+//     return(
+//         <div>fbvkjf</div>
+//     )
+// }
