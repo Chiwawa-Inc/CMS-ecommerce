@@ -2,8 +2,6 @@ import React from "react";
 import Service from "./components/ourservices"
 import ServiceCard from "./components/serviceCard";
 import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import ServicesAccordion from "./components/servicesAccordion";
 
 
 export default function Services() {
