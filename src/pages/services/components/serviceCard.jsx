@@ -2,18 +2,28 @@ import React from "react";
 
 import Card from 'react-bootstrap/Card';
 import ServicesAccordion from "./servicesAccordion";
+import { Link } from "react-router-dom";
 
-function ServiceCard({details}) {
-  return (
+
+function ServiceCard({props}) {
+
+  const SimpleCard = ({props}) => (
     <Card className="bg-dark text-white" style = {{height: "10em", width: "50%", margin: "3em auto",  overflow: "hidden"}}>
-      <Card.Img src={details.image} alt="Card image" />
+      <Card.Img src={props.image} alt="Card image" />
       <Card.ImgOverlay>
-        <Card.Title>{details.title}</Card.Title>
+        <Card.Title>{props.title}</Card.Title>
         <Card.Text>
-          {details.description}
+          {props.description}
         </Card.Text>
       </Card.ImgOverlay>
     </Card>
+  )
+  
+  return (
+    props.subServices ? ServicesAccordion({props}) :
+    <Link to={props.link}>
+      <SimpleCard props={props}/>
+    </Link>
   );
 }
 

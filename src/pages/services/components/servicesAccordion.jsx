@@ -9,7 +9,7 @@ const ServicesAccordion = ({props}) => {
     return (
         <>
         <Card className="bg-dark text-white" style = {{ width: "50%", margin: "3em auto",}}>
-        <Accordion >
+        <Accordion defaultActiveKey={"none"} flush>
             <Accordion.Item style={{ border: "0px"}}>
             <Accordion.Header >
             <Card.Body className="bg-dark text-white" style={{height: "10em", overflow: "hidden", padding:0}}>

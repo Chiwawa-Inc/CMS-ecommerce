@@ -55,12 +55,7 @@ export default function Services() {
         <Container>
         <Service/>
         {servicesList.map((element) =>(
-            (element.subServices) ?
-            <ServicesAccordion props={element}/>
-            :
-            <Link to={element.link}>
-                <ServiceCard details = {element}/>
-            </Link>
+            <ServiceCard props = {element}/>
         ))}
         
         </Container>
