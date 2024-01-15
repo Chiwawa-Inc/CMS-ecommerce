@@ -1,6 +1,7 @@
 import React from "react";
 
 import Card from 'react-bootstrap/Card';
+import ServicesAccordion from "./servicesAccordion";
 
 function ServiceCard({details}) {
   return (
