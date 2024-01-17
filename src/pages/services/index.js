@@ -39,7 +39,21 @@ export default function Services() {
         {title: "MEP Contacting Services",
         link: "",
         image: "https://cdn.mos.cms.futurecdn.net/hFxbSeEGgUHd9csPokBUBW-1200-80.jpg",
-        description: "jdbckjdbvd"
+        description: "jdbckjdbvd", 
+        subServices: [
+            {
+                title: "Mechanical System Inspection service",
+                link: "",
+            },
+            {
+                title: "Mechanical Protection Analysis",
+                link: "",
+            },
+            {
+                title: "Hydrostatic Testing Services",
+                link: "",
+            }
+        ]
         },
 
         {title: "MEP Contacting Services",
