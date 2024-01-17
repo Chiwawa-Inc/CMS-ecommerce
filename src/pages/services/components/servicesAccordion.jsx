@@ -22,7 +22,7 @@ const ServicesAccordion = ({props}) => {
             </Card.ImgOverlay>
             </Card.Body>
             </Accordion.Header>
-            <Card.Footer style={{padding:0}}>
+            <Card.Footer style={{padding:0  , border:0}}>
                 <Accordion.Body style={{padding:0}}>
                 <ListGroup>
                     {props.subServices.map((subService, index) => (
