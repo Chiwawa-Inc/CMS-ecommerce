@@ -10,32 +10,32 @@ import Redefine from "../components/redefine";
 export default function DetailPage(){
     const serviceType = [
         {
-            title: "Electrical Services",
+            title: "Assessment and Analysis",
             image: "",
-            des: " From system design and installation to testing, maintenance, and energy audits, we cover the entire electrical spectrum. Our electrical solutions ensure uninterrupted power supply, enhanced safety, and optimal energy utilization."
+            des: "We begin by conducting a thorough assessment of your electrical systems, analyzing energy consumption, and identifying areas of inefficiency."
             
         },
         {
-            title: "Mechanical Services",
+            title: "Customized Solutions",
             image: "",
-            des: "Our mechanical expertise extends to HVAC systems, ventilation, and climate control. We design, install, and maintain efficient systems that create comfortable environments while reducing energy consumption."
+            des: " Based on our findings, we develop tailored energy optimization strategies that address your specific needs and goals, ensuring maximum savings and minimal environmental impact."
             
         },
         {
-            title: "Plumbing Service",
+            title: "Cutting-Edge Technology",
             image: "",
-            des: " Our plumbing services include design, installation, and maintenance of plumbing systems that prioritize water conservation and safety. We ensure efficient water distribution and drainage solutions."
+            des: " Leveraging the latest in electronics and information technology, we deploy advanced monitoring and control systems to streamline energy usage and monitor real-time performance."
             
         },
         {
-            title: "Technology Integration",
+            title: "Cost Reduction",
             image: "",
-            des: " We seamlessly integrate state-of-the-art electronics and information technology into your MEP systems, enabling smart automation, monitoring, and control for enhanced efficiency and convenience."
+            des: " Our primary aim is to help you reduce operational costs by optimizing energy consumption, thereby enhancing your bottom line."
         },
         {
-            title: "Energy Efficiency",
+            title: "Sustainability:",
             image: "",
-            des: "Sustainability is at the core of our services. We offer energy-efficient solutions, renewable energy integration, and green building practices to reduce your carbon footprint and operating costs."
+            des: "We are passionate about sustainability and will work with you to integrate eco-friendly practices into your operations, reducing your carbon footprint and contributing to a greener future."
         }
 
     ]
@@ -43,36 +43,41 @@ export default function DetailPage(){
     const whyChoose = [
         {
             title: "Expertise",
-            des: "Our team comprises highly skilled engineers, technicians, and specialists who bring years of experience to every project, ensuring the highest level of service and innovation.",
+            des: "Our team brings a wealth of experience and expertise in electrical systems and energy management, ensuring you receive the highest level of service.",
             color: "primary"
         },
         {
-            title: "Customization",
-            des: " We recognize that each project is unique. Our solutions are tailor-made to meet your specific needs and objectives, delivering optimal results.",
+            title: "Custom Solutions",
+            des: "We understand that every business is unique. Our solutions are customized to align with your specific requirements and objectives",
             color: "secondary"
         },
         {
-            title: "Sustainability Focus",
-            des: " We share your commitment to sustainability. Our services are designed to align with environmental best practices, promoting a greener future.",
+            title: "Innnovation",
+            des: " We are at the forefront of technology trends, incorporating the latest innovation to optimize energy efficiency.",
             color: "warning"
         },
         {
-            title: "Efficiency and Reliability",
-            des: "We prioritize the efficiency and reliability of your MEP systems, guaranteeing uninterrupted operations and long-term cost savings.",
+            title: "Cost Savings",
+            des: " Our services are designed to deliver tangible cost savings, improving your company's financial health.",
             color: "danger"
         },
         {
-            title: "Cutting-Edge Technology",
-            des: "We embrace the latest advancements in electronics and information technology to provide you with smart, future-ready solutions.",
+            title: "Sustainabililty",
+            des: "We share your commitment to environmental responsibility, and our solutions reflect this dedication.",
             color: "dark"
         }
     ]
+    
     const head = "Electrical Energy Auditing Services"
     const description = "At Automatica Technologies Pvt. Ltd. (Nepal), we are dedicated to providing comprehensive Electrical Energy Audit Services that empower businesses to optimize their energy consumption, reduce costs, and enhance sustainability. With a deep-rooted commitment to excellence in electrical, electronics, and information technology services, we are your trusted partner in navigating the complex landscape of energy efficiency."
+
+    const a = "Our Approach"
+    const b = "At the heart of our Electrical Energy Audit Services is a meticulous and holistic approach that focuses on understanding your unique energy needs and consumption patterns. Our team of experienced engineers and experts will work closely with you to:"
+    
     return(
        <Container style = {{textAlign: "center"}}>
         <Mep heading = {head} description = {description}/>
-        <DiverseServices/>
+        <DiverseServices approach = {a} choose = {b}/>
         <Row xs={1} md={3} className="g-4">
         
         {serviceType.map((element) =>(
