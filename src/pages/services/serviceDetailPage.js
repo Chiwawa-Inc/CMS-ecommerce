@@ -67,10 +67,16 @@ export default function ServiceDetailPage(){
             color: "dark"
         }
     ]
+    const head = "MEP"
+    const description = "Welcome to Automatica Technologies Pvt. Ltd. (Nepal), where we offer a dynamic suite of Mechanical, Electrical, and Plumbing (MEP) Services that fuse together cutting-edge technology, sustainable solutions, and unparalleled expertise. With a strong commitment to excellence in electrical, electronics, and information technology services, we are your trusted partner in creating environments that are efficient, eco-conscious, and optimized for the future."
+
+    const a = "Our Diverse MEP Services Portfolio"
+    const b = "At Automatica Technologies Pvt. Ltd. (Nepal), our MEP services are a testament to our versatility, precision, and dedication to transforming spaces into thriving, high-performance ecosystems. Our comprehensive MEP services encompass:"
     return(
+
        <Container style = {{textAlign: "center"}}>
-        <Mep/>
-        <DiverseServices/>
+        <Mep heading = {head} description = {description}/>
+        <DiverseServices approach = {a} choose = {b}/>
         <Row xs={1} md={3} className="g-4">
         
         {serviceType.map((element) =>(
