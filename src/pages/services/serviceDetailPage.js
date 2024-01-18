@@ -75,10 +75,16 @@ export default function ServiceDetailPage(){
     return(
 
        <Container style = {{textAlign: "center"}}>
+<<<<<<< HEAD
         <Mep heading = {head} description = {description}/>
         <DiverseServices approach = {a} choose = {b}/>
         <Row xs={1} md={3} className="g-4">
         
+=======
+        <Mep/>
+        <DiverseServices/>
+        <Row xs={1} md={3} className="g-4 justify-content-md-center">
+>>>>>>> main
         {serviceType.map((element) =>(
             <Col>
             <Card details = {element}/>
@@ -87,16 +93,17 @@ export default function ServiceDetailPage(){
         </Row>
 
         <br/>
-        <h2>Why Choose Us</h2>
-        <br/>
-        <Row xs={1} md={3} className="g-4">
-        
-        {whyChoose.map((element) =>(
-            <Col>
-            <ColoredCards details = {element}/>
-            </Col>
-        ))}
-        </Row>
+        <div className="my-5">
+            <h2>Why Choose Us</h2>
+            <br/>
+            <Row xs={1} md={3} className="g-4 justify-content-md-center">
+            {whyChoose.map((element) =>(
+                <Col>
+                <ColoredCards details = {element}/>
+                </Col>
+            ))}
+            </Row>
+        </div>
         <Redefine/>
         </Container>
     )
