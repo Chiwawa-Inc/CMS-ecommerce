@@ -1,5 +1,5 @@
 import React from "react";
-import Mep from "../components/title";
+import Mep from "../components/titleBodyComponent";
 import DiverseServices from "../components/diverseServices";
 import { Container } from "react-bootstrap";
 import Card from "../components/cardgrid";
