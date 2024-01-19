@@ -27,7 +27,7 @@ export default function Inquiry(){
         if(Object.keys(formErrors).length === 0 && isSubmit){
             console.log(formValues)
         }
-    }, [formErrors])
+    }, [formErrors, formValues, isSubmit])
     const validate = (values) => {
         const errors = {}
         const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/i

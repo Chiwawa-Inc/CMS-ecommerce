@@ -75,16 +75,10 @@ export default function ServiceDetailPage(){
     return(
 
        <Container style = {{textAlign: "center"}}>
-<<<<<<< HEAD
         <Mep heading = {head} description = {description}/>
         <DiverseServices approach = {a} choose = {b}/>
-        <Row xs={1} md={3} className="g-4">
-        
-=======
-        <Mep/>
-        <DiverseServices/>
         <Row xs={1} md={3} className="g-4 justify-content-md-center">
->>>>>>> main
+        
         {serviceType.map((element) =>(
             <Col>
             <Card details = {element}/>
