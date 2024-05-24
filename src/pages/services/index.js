@@ -7,19 +7,18 @@ import { Container } from "react-bootstrap";
 export default function Services() {
     const servicesList = [
         {title: "MEP Contacting Services",
-        link: "/serviceDetailPage",
+        link: "services/mepDetailPage",
         image: "https://cdn.mos.cms.futurecdn.net/hFxbSeEGgUHd9csPokBUBW-1200-80.jpg",
         description: "jdbckjdbvd"
         },
 
         {title: "Streamlined Electrical Services",
-        link: "",
         image: "https://cdn.mos.cms.futurecdn.net/hFxbSeEGgUHd9csPokBUBW-1200-80.jpg",
         description: "jdbckjdbvd",
         subServices: [
             {
                 title: "Electrical Energy Auditing",
-                link: "",
+                link: "services/electrical",
             },
             {
                 title: "Electrical Installation Testing",

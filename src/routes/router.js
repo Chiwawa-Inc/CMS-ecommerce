@@ -6,7 +6,7 @@ import Products from "../pages/products";
 import Services from "../pages/services";
 import Home from "../pages/home"
 import Blogs from "../pages/Blogs"
-import ServiceDetailPage  from "../pages/services/serviceDetailPage";
+import MepDetailPage  from "../pages/services/MepDetailPage";
 import DetailPage from "../pages/services/Electrical/Auditing";
 import InstalllDetailPage from "../pages/services/Electrical/Installation";
 import AnalysisDetailPage from "../pages/services/Electrical/Analysis";
@@ -27,40 +27,40 @@ const router = createHashRouter([
                 path: "/products",
                 element: <Products />,
             },
-
+            
+            {
+                path: "/blogs",
+                element: <Blogs/>,
+            },
+            
+            {
+                path: "/contact",
+                element: <Contact />,
+            },
+            
             {
                 path: "/services",
                 element: <Services />,
             },
 
             {
-                path: "/blogs",
-                element: <Blogs/>,
-            },
-
-            {
-                path: "/contact",
-                element: <Contact />,
-            },
-
-            {
-                path: "/servicedetailpage",
-                element: <ServiceDetailPage/>,
+                path: "services/mepDetailPage",
+                element: <MepDetailPage/>,
             },
             {
-                path: "electricalAuditing",
+                path: "services/electricalAuditing",
                 element: <DetailPage/>,
             },
             {
-                path: "installation",
+                path: "services/installation",
                 element: <InstalllDetailPage/>
             },
             {
-                path: "analysis",
+                path: "services/analysis",
                 element: <AnalysisDetailPage/>
             },
             {
-                path: "protection",
+                path: "services/protection",
                 element: <ProtectionDetailPage/>
             },
         ],

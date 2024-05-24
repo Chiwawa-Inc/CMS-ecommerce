@@ -7,7 +7,7 @@ import { Col, Row} from "react-bootstrap";
 import ColoredCards from "./components/coloredCards";
 import Redefine from "./components/redefine";
 
-export default function ServiceDetailPage(){
+export default function MepDetailPage(){
     const serviceType = [
         {
             title: "Electrical Services",
