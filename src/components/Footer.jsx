@@ -47,7 +47,7 @@ export default function Contact(){
             <div style ={{ backgroundColor:"#182130"}}>
             <Container>
             <Row >
-                <div style ={{textAlign: "center", fontSize: "18px", paddingTop: "5px", }}>© 2023 Automatica Technologies</div>
+                <div style ={{textAlign: "center", fontSize: "18px", paddingTop: "5px", }}>© 2024 Automatica Technologies</div>
             </Row>
             </Container>
             </div>

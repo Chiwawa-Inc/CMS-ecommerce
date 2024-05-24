@@ -1,0 +1,8 @@
+let product = [{title: "ACB", price: "12000", category: "Protective devices and Switchgears", brands: ["Siemens", "Schneider Electric", "ABB","C&S", "CHINT", "L&T"], types: ["Electrically Operated Fixed type", "Electrically Operated Draw-out type", "Manually Oprated Fixed type", "Manually Operated Draw-out type"]},
+                {title: "MCCBs", price: "", category: "Protective device and Switchgears", brands: ["Siemens", "Schneider Electric", "ABB", "C&S", "CHINT", "L&T"], Filters: ["Triple Pole", "Four Pole"], Capacity: ["16kA", "25kA", "36kA", "52kA"], Sizes: ["16A", "20A", "32A", "40A", "63A", "100A", "125A", "160A", "200A", "250A", "320A", "400A", "450A", "500A","630A", "800A"]},
+                {title: "MCBs", price: "", category: "Protective device and Switchgears", brands: ["Siemens", "Schneider Electric", "ABB", "C & S", "CHINT", "L & T"], Filters: ["Single Poles (SP)", "Double Poles (DP)", "Triple Pole (TP)"], Types: ["Types A", "Type B", "Type C", "Type D"], Sizes: ["6A", "10A", "16A", "20A", "32A", "40A", "63A"], Capacity: ["6kA", "10kA", ""]},
+                {title: "Surge Protective Devices", price: "", category: "Protective device and Switchgears", brands: []},
+                {title: "AFDDs", price: "", category: "Protective device and Switchgears", brands: []},
+                {title: "Over voltage/Under voltage Relay", price: "", category: "Protective device and Switchgears", brands: [{name: "minilec", types: ["Single Phase", "Three Phase"]}, {name: "Selec"}, {name: "Schneider Electric"}, {name: "CHINT"}]},
+                {title: "Voltage Monitoring Relay", price: "", category: "Protectice devices and switchgears", }
+]
