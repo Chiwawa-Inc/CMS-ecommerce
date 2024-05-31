@@ -23,13 +23,6 @@ function NavBar() {
       link: "/services",
       component: "Services"
     },
-    
-    {
-      id: "4",
-      link: "/blogs",
-      component: "Blogs"
-    },
-
 
     {
       id: "5",
