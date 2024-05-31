@@ -51,7 +51,7 @@ export default function Inquiry(){
 }
     return(
         <>
-        <div className="main-container" style = {{maxWidth: "1000px", minHeight:"100vh", height: "100%", margin: "3rem auto", background: "grey"}}>
+        <div className="main-container" style = {{maxWidth: "1000px", margin: "3rem auto", background: "grey"}}>
             <div className="left d-flex flex-column justify-content-between">
                 <div className="top">
                 <h1>Book an Appointment</h1>
