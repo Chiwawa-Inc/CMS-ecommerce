@@ -4,7 +4,7 @@ import {Container} from "react-bootstrap"
 
 export default function Contact() {
     return(
-    <div style = {{minHeight: "88.5vh"}}>
+    <div>
         <Container >
         <Inquiry/>
         </Container>
