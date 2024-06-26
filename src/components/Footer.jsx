@@ -17,27 +17,26 @@ export default function Contact(){
             {/* bootstrap*/}
             <Row style = {{paddingTop: "30px", paddingBottom: "30px"}}> 
                 <Col style = {{textAlign: "left"}}>
-                    <div className="" style = {{fontSize: "25px", fontFamily: "Inter"}}>
+                    <div className="" style = {{fontSize: "22px", fontFamily: "Inter"}}>
                         <img src = {logo} alt = "logo"  width="40" height="40" style ={{marginRight: "1rem"}}></img>
                         Automatica Technologies<br></br>
-                        Where engineering is Passion!!
                     </div>
                    
                 </Col>
                 <Col style = {{textAlign: "left"}}>
-                    <div style= {{fontSize: "24px"}}>{' '}Contact Us</div>
-                    <div className="" style = {{fontSize: "20px"}}> 
+                    <div style= {{fontSize: "20px"}}>{' '}Contact Us</div>
+                    <div className="" style = {{fontSize: "18px"}}> 
                         <FmdGoodIcon/> Dhapasi, Kathmandu
                     </div>
-                    <div className="" style = {{fontSize: "20px"}}> 
+                    <div className="" style = {{fontSize: "18px"}}> 
                         <CallIcon/> Phone: 9841891831
                     </div>
-                    <div className="" style = {{fontSize: "20px"}}> 
+                    <div className="" style = {{fontSize: "18px"}}> 
                         <EmailIcon/> sales.automatica@gmail.com
                     </div>
                 </Col>
                 <Col md = {3} style = {{textAlign: "left"}}>
-                    <div style= {{fontSize: "24px"}}>Follow Us</div>
+                    <div style= {{fontSize: "20px"}}>Follow Us</div>
                     <div className="text-primary" style ={{color: "white"}}><InstagramIcon/></div>
                     <div className="text-primary"><LinkedInIcon/></div>
                     <div className="text-primary"><FacebookIcon/></div>
@@ -47,7 +46,7 @@ export default function Contact(){
             <div style ={{ backgroundColor:"#182130"}}>
             <Container>
             <Row >
-                <div style ={{textAlign: "center", fontSize: "18px", paddingTop: "5px", }}>© 2023 Automatica Technologies</div>
+                <div style ={{textAlign: "center", fontSize: "16px", paddingTop: "5px", }}>© 2024 Automatica Technologies</div>
             </Row>
             </Container>
             </div>
