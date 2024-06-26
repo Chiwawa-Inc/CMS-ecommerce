@@ -25,6 +25,27 @@ export default function Inquiry(){
     const handleSubmit = (e) => {
         e.preventDefault()
         setFormErrors(validate(formValues))
+        if (Object.keys(formErrors).length === 0 && isSubmit) {
+            const formData = new FormData();
+            formData.append("username", formValues.username);
+            formData.append("email", formValues.email);
+            formData.append("phonenumber", formValues.phonenumber);
+            formData.append("message", formValues.message);
+
+            fetch("/send_mail.php", {
+                method: "POST",
+                body: formData,
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                    // Handle the response from the server
+                })
+                .catch((error) => {
+                    console.error(error);
+                    // Handle any errors that occurred during the request
+                });
+        }
     }
 
     useEffect(() =>{
@@ -32,24 +53,24 @@ export default function Inquiry(){
         if(Object.keys(formErrors).length === 0 && isSubmit){
             console.log(formValues)
         }
-    }, [formErrors])
+    }, [formErrors, formValues, isSubmit])
     const validate = (values) => {
-        const errors = {}
-        const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/i
-        if (!values.username){
-            errors.username = "Username is required"
-    
+            const errors = {}
+            const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/i
+            if (!values.username){
+                errors.username = "Username is required"
+        
+            }
+            if (!values.email){
+            errors.email = "Email is required"
+
         }
-        if (!values.email){
-        errors.email = "Email is required"
+        if (!values.phonenumber){
+        errors.phonenumber = "Phone number is required"
+        }
+        return errors;
 
     }
-    if (!values.phonenumber){
-    errors.phonenumber = "Phone number is required"
-    }
-    return errors;
-
-}
     return(
         <>
         <div className="main-container" style = {{maxWidth: "1000px", margin: "3rem auto", background: "grey"}}>
