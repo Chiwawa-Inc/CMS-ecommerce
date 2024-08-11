@@ -1,0 +1,40 @@
+.hover-card {
+    height: 200px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+  }
+  
+  .hover-card .card-img-overlay {
+    position: absolute;
+    bottom: 0; /* Position text at the bottom */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    transition: max-height 0.3s ease, bottom 0.3s ease;
+    max-height: 60px; /* Initial height to show truncated text */
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .hover-card:hover .card-img-overlay {
+    max-height: 100%;
+    bottom: 0; /* Keep the overlay at the bottom */
+  }
+  
+  .hover-card .card-title, .hover-card .card-text {
+    margin: 0;
+    line-height: 1.2;
+  }
+  

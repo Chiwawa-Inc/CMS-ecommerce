@@ -6,6 +6,7 @@ import Card from "./components/cardgrid";
 import { Col, Row} from "react-bootstrap";
 import ColoredCards from "./components/coloredCards";
 import Redefine from "./components/redefine";
+import FadeInSection from "./components/fadeinsection";
 
 export default function ServiceDetailPage(){
     const serviceType = [
@@ -44,31 +45,31 @@ export default function ServiceDetailPage(){
         {
             title: "Expertise",
             des: "Our team comprises highly skilled engineers, technicians, and specialists who bring years of experience to every project, ensuring the highest level of service and innovation.",
-            color: "primary"
+            color: "#4F709C"
         },
         {
             title: "Customization",
             des: " We recognize that each project is unique. Our solutions are tailor-made to meet your specific needs and objectives, delivering optimal results.",
-            color: "secondary"
+            color: "#987D9A"
         },
         {
             title: "Sustainability Focus",
             des: " We share your commitment to sustainability. Our services are designed to align with environmental best practices, promoting a greener future.",
-            color: "warning"
+            color: "#3C5B6F"
         },
         {
             title: "Efficiency and Reliability",
             des: "We prioritize the efficiency and reliability of your MEP systems, guaranteeing uninterrupted operations and long-term cost savings.",
-            color: "danger"
+            color: "#758694"
         },
         {
             title: "Cutting-Edge Technology",
             des: "We embrace the latest advancements in electronics and information technology to provide you with smart, future-ready solutions.",
-            color: "dark"
+            color: "#A0937D"
         }
     ]
     return(
-       <Container style = {{textAlign: "center"}}>
+       <div style = {{textAlign: "center"}}>
         <Mep/>
         <DiverseServices/>
         <Row xs={1} md={3} className="g-4 justify-content-md-center">
@@ -80,8 +81,9 @@ export default function ServiceDetailPage(){
         </Row>
 
         <br/>
+        <FadeInSection>
         <div className="my-5">
-            <h2>Why Choose Us</h2>
+            <h2 style= {{fontSize: "40px", fontWeight:"bold", color: "#134B70"}}>Why Choose Us</h2>
             <br/>
             <Row xs={1} md={3} className="g-4 justify-content-md-center">
             {whyChoose.map((element) =>(
@@ -91,7 +93,8 @@ export default function ServiceDetailPage(){
             ))}
             </Row>
         </div>
+        </FadeInSection>
         <Redefine/>
-        </Container>
+        </div>
     )
 }

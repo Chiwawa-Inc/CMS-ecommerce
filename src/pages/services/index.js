@@ -65,11 +65,12 @@ export default function Services() {
     return(
 
         <Container>
+        <>
         <Service/>
         {servicesList.map((element) =>(
             <ServiceCard props = {element}/>
         ))}
-        
+        </>
         </Container>
 
     )
